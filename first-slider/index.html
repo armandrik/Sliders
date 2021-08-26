@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="meta-container">
+        <div class="slider animation">
+            <img src="image/31222.jpg" alt="random-picture">
+            <div class="text">
+                <hr> pictrue 1
+                <hr>
+            </div>
+        </div>
+        <div class="slider animation">
+            <img src="image/31227.jpg" alt="random-picture">
+            <div class="text">
+                <hr> pictrue 2
+                <hr>
+            </div>
+        </div>
+        <div class="slider animation">
+            <img src="image/31231.jpg" alt="random-picture">
+            <div class="text">
+                <hr> pictrue 3
+                <hr>
+            </div>
+        </div>
+        <div class="slider animation">
+            <img src="image/31235.jpg" alt="random-picture">
+            <div class="text">
+                <hr> pictrue 4
+                <hr>
+            </div>
+        </div>
+        <div class="slider animation">
+            <img src="image/291771.jpg" alt="random-picture">
+            <div class="text">
+                <hr> pictrue 5
+                <hr>
+            </div>
+        </div>
+        <div class="dots-container">
+            <span onclick="ThisSlide(1)"></span>
+            <span onclick="ThisSlide(2)"></span>
+            <span onclick="ThisSlide(3)"></span>
+            <span onclick="ThisSlide(4)"></span>
+            <span onclick="ThisSlide(5)"></span>
+        </div>
+        <div class="next-button">
+            <button class="next" onclick="prevSlide()"><i class="fa fa-chevron-left"></i></button>
+        </div>
+        <div class="prev-button">
+            <button class="prev" onclick="nextSlide()"><i class="fa fa-chevron-right"></i></button>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>

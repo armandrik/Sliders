@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../../Learn/images/147507.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meta-container {
+    width: 70%;
+    height: 70vh;
+    position: relative;
+}
+
+.slider {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: 69vh;
+    border-radius: 10px;
+}
+
+.text {
+    position: absolute;
+    background-color: rgba(32, 32, 32, 0.651);
+    height: 6vh;
+    width: 100%;
+    top: 411px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 27px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .5s;
+}
+
+.text:hover {
+    background-color: rgba(32, 32, 32, 0.87);
+}
+
+.dots-container {
+    position: absolute;
+    top: 5px;
+    left: 39%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    align-items: center;
+}
+
+span {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(32, 32, 32, 0.651);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 2px;
+    transition: .5s;
+}
+
+span:hover {
+    background-color: rgb(32, 32, 32);
+}
+
+.next-button {
+    position: absolute;
+    top: 162px;
+    left: -45px;
+    width: 5%;
+    height: 15vh;
+    background-color: rgba(32, 32, 32, 0.651);
+    border-radius: 100% 0% 0% 100% / 50% 50% 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.next-button:hover {
+    background-color: rgba(32, 32, 32, 0.87);
+}
+
+.prev-button {
+    position: absolute;
+    top: 162px;
+    right: -45px;
+    width: 5%;
+    height: 15vh;
+    background-color: rgba(32, 32, 32, 0.651);
+    border-radius: 0% 100% 100% 0% / 50% 50% 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.prev-button:hover {
+    background-color: rgba(32, 32, 32, 0.87);
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+i {
+    color: white;
+    opacity: .5;
+    transition: .5s;
+}
+
+i:hover {
+    opacity: 1;
+}
+
+hr {
+    width: 283px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.active {
+    background-color: rgb(32, 32, 32);
+}
+
+.animation {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .6
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .6
+    }
+    to {
+        opacity: 1
+    }
+}
