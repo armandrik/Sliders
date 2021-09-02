@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D4DAD9;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    animation: ease-in-out;
+}
+
+.meta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+}
+
+.my-slides {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50vh;
+}
+
+img {
+    width: 50%;
+    height: 50vh;
+}
+
+.text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 50vh;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 6px #5a5a5a, inset -5px -5px 6px #ffffff;
+    padding-left: 26px;
+}
+
+h3,
+h1,
+p {
+    color: rgb(104, 103, 103);
+}
+
+p {
+    line-height: 1.5;
+}
+
+::selection {
+    background-color: rgb(211, 210, 210);
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(315deg, #f0f0f0, #cacaca);
+    box-shadow: 0px 0px 10px #5a5a5a, 0 0 10px 1px #ffffff;
+    cursor: pointer;
+    font-size: 25px;
+    transition: .5s;
+}
+
+button:nth-child(1) {
+    position: absolute;
+    left: 50px;
+    top: 270px;
+}
+
+button:last-of-type {
+    position: absolute;
+    right: 50px;
+    top: 270px;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 5px rgb(120, 233, 214);
+}
+
+i {
+    color: rgb(88, 88, 88);
+    padding: 24px 21px;
+    transition: .5s;
+}
+
+i:hover {
+    color: rgb(120, 233, 214);
+}
+
+.slide-animation {
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 2s;
+    animation-name: slide;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes slide {
+    from {
+        transform: scale(.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: scale(.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
