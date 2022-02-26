@@ -5,20 +5,20 @@
 }
 
 body {
-    background-color: #D4DAD9;
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #D4DAD9;
+    font-family: Arial, Helvetica, sans-serif;
     transition: .5s;
     animation: ease-in-out;
+    height: 100vh;
 }
 
 .meta-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 12%;
 }
 
 .my-slides {
@@ -73,18 +73,7 @@ button {
     cursor: pointer;
     font-size: 25px;
     transition: .5s;
-}
-
-button:nth-child(1) {
-    position: absolute;
-    left: 50px;
-    top: 270px;
-}
-
-button:last-of-type {
-    position: absolute;
-    right: 50px;
-    top: 270px;
+    margin: 0 20px;
 }
 
 button:hover {
